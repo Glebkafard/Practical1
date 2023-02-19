@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.lang.Math;
+public class test
+{
+    static int function(int a,int b,int c)
+    {
+        int p=a+b+c;
+        return p;
+    }
+    public static void main (String [] args)
+    {
+        Scanner scan = new Scanner (System.in);
+        System.out.print("Pracktical Task №1. Variant 1. Student: Volkov G.I. Group: RIBO-04-21\n");
+        System.out.print("a= ");
+        int a = scan.nextInt();
+        System.out.print("b= ");
+        int b = scan.nextInt();
+        System.out.print("c= ");
+        int c  = scan.nextInt();
+        System.out.println("Triangle Perimeter:"+function (a,b,c));
+        System.out.println("Rectangle Perimeter:"+function (a,b,c));
+        double p1 = (a + b + c) / 2.0;
+        double st = Math.sqrt(p1 * (p1 - a) * (p1 - b) * (p1 - c));
+        double sr = a * b;
+        System.out.println("Triangle Area:"+st);
+        System.out.println("Triangle Area:"+sr);
+    }
+}
